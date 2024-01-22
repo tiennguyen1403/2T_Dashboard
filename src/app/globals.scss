@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .sidebar-container {
+    @apply w-[250px] h-full bg-white shadow-sidebar py-6 px-4 flex flex-col;
+  }
+  .menu-item {
+    @apply px-4 rounded-xl flex items-center gap-4 cursor-pointer h-12 hover:bg-[#F8FAFC] text-[#64748B] text-sm font-medium leading-[22.4px] tracking-[0.2px] hover:font-bold hover:text-[#2563EB] transition-all;
+  }
+  .sidebar-project-item {
+    @apply text-grey-scale-900 text-sm font-semibold leading-[22.4px] tracking-[0.2px] px-4 h-12 rounded-xl flex items-center gap-4 cursor-pointer hover:bg-[#F8FAFC] transition-all hover:text-[#2563EB] hover:font-bold;
+  }
+  .body-xlarge-regular {
+    @apply text-grey-scale-900 text-xl font-normal leading-[30px] tracking-[0.2px];
+  }
+  .body-large-bold {
+    @apply text-grey-scale-900 text-base font-bold leading-6 tracking-[0.2px];
+  }
+  .body-large-semibold {
+    @apply text-grey-scale-900 text-base font-semibold leading-6 tracking-[0.2px];
+  }
+  .body-large-medium {
+    @apply text-grey-scale-900 text-base font-medium leading-6 tracking-[0.2px];
+  }
+  .body-large-regular {
+    @apply text-grey-scale-900 text-base font-normal leading-[25.6px];
+  }
+  .body-medium-bold {
+    @apply text-grey-scale-900 text-sm font-bold leading-[22.4px];
+  }
+  .body-medium-semibold {
+    @apply text-grey-scale-900 text-sm font-semibold leading-[22.4px] tracking-[0.2px];
+  }
+  .body-medium-medium {
+    @apply text-grey-scale-900 text-sm font-medium leading-[22.4px] tracking-[0.2px];
+  }
+  .body-medium-regular {
+    @apply text-grey-scale-900 text-sm font-normal leading-[22.4px];
+  }
+  .body-small-bold {
+    @apply text-grey-scale-900 text-xs font-bold leading-[19.2px];
+  }
+  .body-small-semibold {
+    @apply text-grey-scale-900 text-xs font-semibold leading-[19.2px];
+  }
+  .body-small-medium {
+    @apply text-grey-scale-900 text-xs font-medium leading-[19.2px];
+  }
+  .body-small-regular {
+    @apply text-grey-scale-900 text-xs font-normal leading-[19.2px];
+  }
+}

@@ -1,15 +1,15 @@
 import React from "react";
 import Link from "next/link";
 
-const Home: React.FC = () => {
+const Dashboard: React.FC = () => {
   return (
     <div>
-      <h1>Hello world</h1>
+      <p>Dashboard</p>
       <button>
-        <Link href="/dashboard">Dashboard</Link>
+        <Link href="/">Back to home</Link>
       </button>
     </div>
   );
 };
 
-export default Home;
+export default Dashboard;
