@@ -15,6 +15,9 @@ const config: Config = {
       boxShadow: {
         sidebar: "10px 10px 50px 0px rgba(100, 116, 139, 0.04)",
       },
+      fontFamily: {
+        "dancing-script": ["Dancing Script", "cursive"],
+      },
       colors: {
         primary: {
           50: "#EFF6FF",

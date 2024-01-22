@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -70,5 +72,23 @@ body {
   }
   .body-small-regular {
     @apply text-grey-scale-900 text-xs font-normal leading-[19.2px];
+  }
+  .heading-1 {
+    @apply text-grey-scale-900 text-[40px] font-bold leading-[50px] tracking-[-0.5px];
+  }
+  .heading-2 {
+    @apply text-grey-scale-900 text-[32px] font-bold leading-[40px] tracking-[-0.2px];
+  }
+  .heading-3 {
+    @apply text-grey-scale-900 text-[24px] font-bold leading-[30px] tracking-[0.2px];
+  }
+  .heading-4 {
+    @apply text-grey-scale-900 text-[22px] font-bold leading-[27.5px];
+  }
+  .heading-5 {
+    @apply text-grey-scale-900 text-[18px] font-bold leading-[25.2px] tracking-[0.2px];
+  }
+  .heading-6 {
+    @apply text-grey-scale-900 text-[16px] font-bold leading-[22.4px] tracking-[0.2px];
   }
 }
