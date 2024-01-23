@@ -1,13 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import RecentProjects from "./components/RecentProjects";
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <h1>Hello world</h1>
-      <button>
-        <Link href="/dashboard">Dashboard</Link>
-      </button>
+    <div className="grid grid-cols-12 grid-rows-1 gap-6">
+      <RecentProjects />
     </div>
   );
 };

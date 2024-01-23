@@ -1,10 +1,12 @@
 import type { Config } from "tailwindcss";
+import { nextui } from "@nextui-org/react";
 
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -14,6 +16,7 @@ const config: Config = {
       },
       boxShadow: {
         sidebar: "10px 10px 50px 0px rgba(100, 116, 139, 0.04)",
+        1: "rgba(149, 157, 165, 0.2) 0px 8px 24px;",
       },
       fontFamily: {
         "dancing-script": ["Dancing Script", "cursive"],
@@ -75,6 +78,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [nextui()],
 };
 export default config;
